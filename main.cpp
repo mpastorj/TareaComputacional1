@@ -6,8 +6,26 @@
  */
 
 #include <cstdlib>
+#include <iostream>
+#include <stdio.h> 
+#include <stdlib.h> 
+#include <math.h>
 
 using namespace std;
+
+void imprimir(char M[8][8]){ 
+     int i=0;
+     int j=0;
+     system("cls");
+             for(i=0;i<8;i++){
+                      for(j=0;j<8;j++){
+                                       cout<<M[i][j];
+                                       cout<<" ";
+                                       }
+                                       cout<<"\n";
+                      }  
+     
+     }
 
 /*
  * 
@@ -26,6 +44,8 @@ int main(int argc, char** argv) {
         M[2][5]='O';
         M[5][2]='O';
         M[5][5]='O';
+        
+        imprimir(M);
         
         return 0;
 }
